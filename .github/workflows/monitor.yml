@@ -8,17 +8,27 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "monitor-e-pages"
+  cancel-in-progress: false
 
 jobs:
   atualizar:
-    name: Buscar e processar relatorio
+    name: Buscar, processar e publicar
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Baixar arquivos
+      - name: Baixar arquivos do repositorio
         uses: actions/checkout@v7
 
-      - name: Preparar Python
+      - name: Preparar o Python
         uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -27,10 +37,10 @@ jobs:
       - name: Instalar ferramentas
         run: pip install -r requirements.txt
 
-      - name: Executar monitor
+      - name: Executar o monitor
         run: python monitor.py
 
-      - name: Salvar resultados
+      - name: Salvar os resultados
         run: |
           git config user.name "Monitor Automatico"
           git config user.email "actions@github.com"
@@ -42,3 +52,12 @@ jobs:
             git commit -m "Atualizacao automatica dos empregados"
             git push
           fi
+
+      - name: Preparar arquivos do site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
