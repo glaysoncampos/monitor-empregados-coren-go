@@ -1,1 +1,45 @@
+name: Atualizar monitor de empregados
 
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Executa diariamente às 7h30 de Brasília
+    - cron: "30 10 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    name: Buscar e processar relatório
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar arquivos do repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar o Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar ferramentas
+        run: pip install -r requirements.txt
+
+      - name: Executar o monitor
+        run: python monitor.py
+
+      - name: Salvar os resultados
+        run: |
+          git config user.name "Monitor Automático"
+          git config user.email "actions@github.com"
+          git add docs/dados.json docs/empregados.csv
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma mudança encontrada."
+          else
+            git commit -m "Atualização automática dos empregados"
+            git push
+          fi
