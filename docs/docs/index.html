@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Monitor automático da relação de empregados do Coren-GO"
+    >
+
+    <title>
+        Monitor de Empregados do Coren-GO
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <div>
+                <p class="instituicao">
+                    COREN-GO
+                </p>
+
+                <h1>
+                    Monitor de Empregados
+                </h1>
+
+                <p class="subtitulo">
+                    Auditoria automática do Portal da Transparência
+                </p>
+            </div>
+
+            <div class="status">
+                <span class="status-ponto"></span>
+                Monitor ativo
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="informacoes">
+            <div>
+                <span>Relatório analisado</span>
+
+                <strong id="relatorio">
+                    Carregando...
+                </strong>
+            </div>
+
+            <div>
+                <span>Data de publicação</span>
+
+                <strong id="data-publicacao">
+                    Carregando...
+                </strong>
+            </div>
+
+            <div>
+                <span>Última verificação</span>
+
+                <strong id="ultima-verificacao">
+                    Carregando...
+                </strong>
+            </div>
+        </section>
+
+        <section class="cartoes">
+            <article class="cartao destaque">
+                <span>Total de empregados</span>
+                <strong id="total">0</strong>
+                <small>Quadro geral identificado</small>
+            </article>
+
+            <article class="cartao">
+                <span>Concursados e efetivos</span>
+                <strong id="efetivos">0</strong>
+                <small id="percentual-efetivos">0% do total</small>
+            </article>
+
+            <article class="cartao">
+                <span>Comissionados</span>
+                <strong id="comissionados">0</strong>
+                <small id="percentual-comissionados">0% do total</small>
+            </article>
+
+            <article class="cartao">
+                <span>Função gratificada</span>
+                <strong id="funcoes">0</strong>
+                <small>Está dentro dos efetivos</small>
+            </article>
+
+            <article class="cartao">
+                <span>Efetivo em comissão</span>
+                <strong id="efetivos-comissao">0</strong>
+                <small>Está dentro dos efetivos</small>
+            </article>
+        </section>
+
+        <section class="painel-distribuicao">
+            <div>
+                <p class="rotulo">Distribuição do quadro</p>
+
+                <h2>
+                    Efetivos e comissionados
+                </h2>
+            </div>
+
+            <div class="grafico-area">
+                <div
+                    id="grafico-rosca"
+                    class="grafico-rosca"
+                    aria-label="Gráfico de distribuição"
+                >
+                    <div class="grafico-centro">
+                        <strong id="grafico-total">0</strong>
+                        <span>empregados</span>
+                    </div>
+                </div>
+
+                <div class="legenda">
+                    <div>
+                        <span class="cor efetivo"></span>
+                        <span>Efetivos</span>
+                        <strong id="legenda-efetivos">0</strong>
+                    </div>
+
+                    <div>
+                        <span class="cor comissionado"></span>
+                        <span>Comissionados</span>
+                        <strong id="legenda-comissionados">0</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lista">
+            <div class="lista-cabecalho">
+                <div>
+                    <p class="rotulo">
+                        Detalhamento
+                    </p>
+
+                    <h2>
+                        Relação de empregados
+                    </h2>
+                </div>
+
+                <div class="acoes">
+                    <input
+                        id="pesquisa"
+                        type="search"
+                        placeholder="Pesquisar nome ou cargo"
+                        aria-label="Pesquisar empregado"
+                    >
+
+                    <select
+                        id="filtro"
+                        aria-label="Filtrar por categoria"
+                    >
+                        <option value="">
+                            Todas as categorias
+                        </option>
+
+                        <option value="Efetivo">
+                            Efetivo
+                        </option>
+
+                        <option value="Efetivo com função gratificada">
+                            Função gratificada
+                        </option>
+
+                        <option value="Efetivo com cargo em comissão">
+                            Efetivo em comissão
+                        </option>
+
+                        <option value="Comissionado">
+                            Comissionado
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tabela-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Nome</th>
+                            <th>Cargo</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabela-empregados">
+                        <tr>
+                            <td colspan="4">
+                                Carregando dados...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="lista-rodape">
+                <span id="quantidade-exibida">
+                    0 empregados exibidos
+                </span>
+
+                <div>
+                    <a
+                        href="empregados.csv"
+                        class="botao secundario"
+                        download
+                    >
+                        Baixar planilha
+                    </a>
+
+                    <a
+                        id="link-fonte"
+                        href="#"
+                        class="botao"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Abrir relatório original
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="mensagem-erro"
+            class="mensagem-erro"
+            hidden
+        >
+            Não foi possível carregar os dados do monitor.
+        </section>
+    </main>
+
+    <footer>
+        Dados obtidos automaticamente do Portal da Transparência do Coren-GO.
+    </footer>
+</body>
+</html>
