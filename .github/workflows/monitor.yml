@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Executa diariamente às 7h30 de Brasília
     - cron: "30 10 * * *"
 
 permissions:
@@ -12,14 +11,14 @@ permissions:
 
 jobs:
   atualizar:
-    name: Buscar e processar relatório
+    name: Buscar e processar relatorio
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar arquivos do repositório
+      - name: Baixar arquivos
         uses: actions/checkout@v4
 
-      - name: Preparar o Python
+      - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -28,18 +27,18 @@ jobs:
       - name: Instalar ferramentas
         run: pip install -r requirements.txt
 
-      - name: Executar o monitor
+      - name: Executar monitor
         run: python monitor.py
 
-      - name: Salvar os resultados
+      - name: Salvar resultados
         run: |
-          git config user.name "Monitor Automático"
+          git config user.name "Monitor Automatico"
           git config user.email "actions@github.com"
           git add docs/dados.json docs/empregados.csv
 
           if git diff --cached --quiet; then
-            echo "Nenhuma mudança encontrada."
+            echo "Nenhuma mudanca encontrada."
           else
-            git commit -m "Atualização automática dos empregados"
+            git commit -m "Atualizacao automatica dos empregados"
             git push
           fi
