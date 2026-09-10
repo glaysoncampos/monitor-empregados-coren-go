@@ -1,0 +1,541 @@
+{
+  "atualizado_em": "2026-09-10T19:50:49.899753-03:00",
+  "ano": 2026,
+  "fonte": {
+    "titulo_lista": "Relação de Empregados com Cargos _2026",
+    "nome": "Relacao Funcionarios Coren GO - Agosto 2026.pdf",
+    "data_upload": "07/08/2026",
+    "url": "https://coren-go.implanta.net.br/portaltransparencia/Publico/ArquivosAnexos/Download?idArquivoAnexo=51ea7a87-085f-458b-9e53-f837dd83feb2"
+  },
+  "pdf_sha256": "84151cf2d5fc51bc5ad7f50d61b06d950f1fc692df9fd51826ee7e1cd98067eb",
+  "totais": {
+    "total": 52,
+    "concursados_efetivos": 35,
+    "comissionados": 17,
+    "funcao_gratificada": 10,
+    "efetivo_cargo_comissao": 10,
+    "nao_identificados": 0
+  },
+  "empregados": [
+    {
+      "numero": 1,
+      "nome": "ADRIELLY CRISTINA DA CUNHA MARTINS",
+      "cargo": "Assessora Técnica Nivel 1",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 2,
+      "nome": "ALBANIA THAISY BATISTA DA SILVA",
+      "cargo": "Assessora Técnica Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 3,
+      "nome": "ANA PAULA ALVES DE SOUZA",
+      "cargo": "Assessora Técnica Nivel 1",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 4,
+      "nome": "ANDRÉ PEREIRA DA SILVA",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 5,
+      "nome": "ANGELICA OLIVEIRA PAULA",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 6,
+      "nome": "ANTONIO BAUER MACIEL BATISTA",
+      "cargo": "Assessor Técnico Nivel 3",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 7,
+      "nome": "ARILDO DE SOUZA",
+      "cargo": "Assessor Técnico Nivel 5",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 8,
+      "nome": "BENEDITO GARCIA GOMES",
+      "cargo": "Motorista",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 9,
+      "nome": "CARLA DE AQUINO PEREIRA",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 10,
+      "nome": "CELIA VIANA FRANCO",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 11,
+      "nome": "CHRISTIANE MOREIRA SOUZA",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 12,
+      "nome": "CLEUSA DE SOUSA RESENDE MENDES",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 13,
+      "nome": "CLEUZENI MORAES DE PAULA",
+      "cargo": "Assessora Técnica Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 14,
+      "nome": "DANIELLA CRISTINA SALLES",
+      "cargo": "Assessora Técnica Nivel 5",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 15,
+      "nome": "DEIVID PEREIRA GOMES DE ALENCAR",
+      "cargo": "Assessor Técnico Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 16,
+      "nome": "DELEON FERNANDES DE SA",
+      "cargo": "Telefonista",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 17,
+      "nome": "DIOGO FREIRE DA SILVA",
+      "cargo": "Assessor Técnico Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 18,
+      "nome": "DORAILDE DE PAULA ALVARENGA",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 19,
+      "nome": "DYLZENY LOPES",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 20,
+      "nome": "ELVIANE DE CASTRO QUEIROZ",
+      "cargo": "Assessora Técnica Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 21,
+      "nome": "ELYKERSON FRANCISCO SANTOS",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 22,
+      "nome": "ERNANDES ALVES NEVES",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 23,
+      "nome": "FERNANDA JOYCE ALVES LEITE",
+      "cargo": "Assessora Técnica Nivel 1",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 24,
+      "nome": "FLÁVIO HENRIQUE CRISPIM BRAGA",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 25,
+      "nome": "FRANKLIN SILVA BRANDAO",
+      "cargo": "Advogado / Aposentado",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 26,
+      "nome": "GIOVANNA DA SILVA BARROS",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 27,
+      "nome": "GLAYSON CAMPOS DA SILVA",
+      "cargo": "Asssitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 28,
+      "nome": "JANAINA RODRIGUES DUARTE",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 29,
+      "nome": "JOSANE PIRES DA SILVA",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 30,
+      "nome": "KARLA RODRIGUES CABRAL LOUZADA",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 31,
+      "nome": "KATIANE DE OLIVEIRA C. GONCALVES",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 32,
+      "nome": "KISSIA RAYDES RIVAS A. DE Q. MIRANDA",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 33,
+      "nome": "LUAN CARLOS GOMES MARQUES",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 34,
+      "nome": "LUCAS RORIZ REIS",
+      "cargo": "Advogado",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 35,
+      "nome": "LUCIANA FREIRE D EÇA N. SANTOS",
+      "cargo": "Assessora Técnica Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 36,
+      "nome": "LUZIA NOGUEIRA REIS DOMINGUES",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 37,
+      "nome": "MARCOS RICARDO VIEIRA GOMES",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 38,
+      "nome": "MARCOS VINICIUS JOSE RIBEIRO",
+      "cargo": "Enfermeiro Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 39,
+      "nome": "MARIA DE JESUS ALVES MILHOMENS",
+      "cargo": "Copeira",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 40,
+      "nome": "MARIA DE JESUS BRAGA PINTO",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 41,
+      "nome": "MARIA FÁTIMA DOS SANTOS",
+      "cargo": "Assessora Técnica Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 42,
+      "nome": "MARILIA NOGUEIRA DE ABREU",
+      "cargo": "Enfermeiro Fiscal",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 43,
+      "nome": "STHEFANNY CRISTHINA DE SOUSA",
+      "cargo": "Assessora Técnica Nivel 5",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 44,
+      "nome": "MOISES CARLOS BRAGA",
+      "cargo": "Digitalizador",
+      "categoria": "Efetivo com cargo em comissão",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": true
+    },
+    {
+      "numero": 45,
+      "nome": "NIVIA ROSA DA SILVA",
+      "cargo": "Assessora Técnica Nivel 5",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 46,
+      "nome": "PEDRO PAULO LEAL",
+      "cargo": "Assessora Técnica Nivel 3",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 47,
+      "nome": "RAFAEL CASEMIRO BAZILIO",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 48,
+      "nome": "ROGERIO MATHEUS BARBOSA",
+      "cargo": "Assessor Técnico Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 50,
+      "nome": "TANIA BORGES DIAS",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 51,
+      "nome": "THIAGO MOURA MARRA",
+      "cargo": "Assitente Administrativo",
+      "categoria": "Efetivo com função gratificada",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": true,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 52,
+      "nome": "VALERIA CARDOSO GUIMARÃES",
+      "cargo": "Assessora Técnica Nivel 3",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 53,
+      "nome": "VANESSA DA SILVA PALANDRANI",
+      "cargo": "Enfermeira Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    }
+  ]
+}

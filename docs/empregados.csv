@@ -1,0 +1,53 @@
+﻿numero;nome;cargo;categoria;efetivo;comissionado;funcao_gratificada;efetivo_cargo_comissao
+1;ADRIELLY CRISTINA DA CUNHA MARTINS;Assessora Técnica Nivel 1;Comissionado;False;True;False;False
+2;ALBANIA THAISY BATISTA DA SILVA;Assessora Técnica Nivel 4;Comissionado;False;True;False;False
+3;ANA PAULA ALVES DE SOUZA;Assessora Técnica Nivel 1;Comissionado;False;True;False;False
+4;ANDRÉ PEREIRA DA SILVA;Assitente Administrativo;Efetivo;True;False;False;False
+5;ANGELICA OLIVEIRA PAULA;Enfermeira Fiscal;Efetivo com cargo em comissão;True;False;False;True
+6;ANTONIO BAUER MACIEL BATISTA;Assessor Técnico Nivel 3;Comissionado;False;True;False;False
+7;ARILDO DE SOUZA;Assessor Técnico Nivel 5;Comissionado;False;True;False;False
+8;BENEDITO GARCIA GOMES;Motorista;Efetivo;True;False;False;False
+9;CARLA DE AQUINO PEREIRA;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+10;CELIA VIANA FRANCO;Assitente Administrativo;Efetivo;True;False;False;False
+11;CHRISTIANE MOREIRA SOUZA;Enfermeira Fiscal;Efetivo;True;False;False;False
+12;CLEUSA DE SOUSA RESENDE MENDES;Enfermeira Fiscal;Efetivo;True;False;False;False
+13;CLEUZENI MORAES DE PAULA;Assessora Técnica Nivel 4;Comissionado;False;True;False;False
+14;DANIELLA CRISTINA SALLES;Assessora Técnica Nivel 5;Comissionado;False;True;False;False
+15;DEIVID PEREIRA GOMES DE ALENCAR;Assessor Técnico Nivel 4;Comissionado;False;True;False;False
+16;DELEON FERNANDES DE SA;Telefonista;Efetivo;True;False;False;False
+17;DIOGO FREIRE DA SILVA;Assessor Técnico Nivel 4;Comissionado;False;True;False;False
+18;DORAILDE DE PAULA ALVARENGA;Assitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+19;DYLZENY LOPES;Enfermeira Fiscal;Efetivo;True;False;False;False
+20;ELVIANE DE CASTRO QUEIROZ;Assessora Técnica Nivel 4;Comissionado;False;True;False;False
+21;ELYKERSON FRANCISCO SANTOS;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+22;ERNANDES ALVES NEVES;Assitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+23;FERNANDA JOYCE ALVES LEITE;Assessora Técnica Nivel 1;Efetivo com cargo em comissão;True;False;False;True
+24;FLÁVIO HENRIQUE CRISPIM BRAGA;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+25;FRANKLIN SILVA BRANDAO;Advogado / Aposentado;Efetivo com função gratificada;True;False;True;False
+26;GIOVANNA DA SILVA BARROS;Enfermeira Fiscal;Efetivo;True;False;False;False
+27;GLAYSON CAMPOS DA SILVA;Asssitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+28;JANAINA RODRIGUES DUARTE;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+29;JOSANE PIRES DA SILVA;Assitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+30;KARLA RODRIGUES CABRAL LOUZADA;Enfermeira Fiscal;Efetivo;True;False;False;False
+31;KATIANE DE OLIVEIRA C. GONCALVES;Enfermeira Fiscal;Efetivo com função gratificada;True;False;True;False
+32;KISSIA RAYDES RIVAS A. DE Q. MIRANDA;Enfermeira Fiscal;Efetivo;True;False;False;False
+33;LUAN CARLOS GOMES MARQUES;Assitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+34;LUCAS RORIZ REIS;Advogado;Efetivo;True;False;False;False
+35;LUCIANA FREIRE D EÇA N. SANTOS;Assessora Técnica Nivel 4;Comissionado;False;True;False;False
+36;LUZIA NOGUEIRA REIS DOMINGUES;Enfermeira Fiscal;Efetivo;True;False;False;False
+37;MARCOS RICARDO VIEIRA GOMES;Assitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+38;MARCOS VINICIUS JOSE RIBEIRO;Enfermeiro Fiscal;Efetivo;True;False;False;False
+39;MARIA DE JESUS ALVES MILHOMENS;Copeira;Efetivo;True;False;False;False
+40;MARIA DE JESUS BRAGA PINTO;Assitente Administrativo;Efetivo com cargo em comissão;True;False;False;True
+41;MARIA FÁTIMA DOS SANTOS;Assessora Técnica Nivel 4;Comissionado;False;True;False;False
+42;MARILIA NOGUEIRA DE ABREU;Enfermeiro Fiscal;Efetivo com função gratificada;True;False;True;False
+43;STHEFANNY CRISTHINA DE SOUSA;Assessora Técnica Nivel 5;Comissionado;False;True;False;False
+44;MOISES CARLOS BRAGA;Digitalizador;Efetivo com cargo em comissão;True;False;False;True
+45;NIVIA ROSA DA SILVA;Assessora Técnica Nivel 5;Comissionado;False;True;False;False
+46;PEDRO PAULO LEAL;Assessora Técnica Nivel 3;Comissionado;False;True;False;False
+47;RAFAEL CASEMIRO BAZILIO;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+48;ROGERIO MATHEUS BARBOSA;Assessor Técnico Nivel 4;Comissionado;False;True;False;False
+50;TANIA BORGES DIAS;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+51;THIAGO MOURA MARRA;Assitente Administrativo;Efetivo com função gratificada;True;False;True;False
+52;VALERIA CARDOSO GUIMARÃES;Assessora Técnica Nivel 3;Comissionado;False;True;False;False
+53;VANESSA DA SILVA PALANDRANI;Enfermeira Fiscal;Efetivo;True;False;False;False
