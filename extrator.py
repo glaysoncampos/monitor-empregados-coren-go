@@ -212,17 +212,28 @@ def extrair_empregados(pdf_bytes):
                             empregado
                         )
 
-    empregados_unicos = {
-        empregado["numero"]: empregado
-        for empregado in empregados
-    }
+    empregados_unicos = {}
 
-    resultado = [
-        empregados_unicos[numero]
-        for numero in sorted(
-            empregados_unicos
+    for empregado in empregados:
+        chave = normalizar(
+            empregado["nome"]
         )
-    ]
+
+        if (
+            chave
+            and chave not in empregados_unicos
+        ):
+            empregados_unicos[chave] = empregado
+
+    resultado = list(
+        empregados_unicos.values()
+    )
+
+    for numero, empregado in enumerate(
+        resultado,
+        start=1
+    ):
+        empregado["numero"] = numero
 
     if len(resultado) < 5:
         raise RuntimeError(
