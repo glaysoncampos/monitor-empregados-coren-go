@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-10T20:23:57.714340-03:00",
+  "atualizado_em": "2026-09-11T09:40:38.565168-03:00",
   "ano": 2026,
   "fonte": {
     "titulo_lista": "Relação de Empregados com Cargos _2026",
@@ -9,8 +9,8 @@
   },
   "pdf_sha256": "84151cf2d5fc51bc5ad7f50d61b06d950f1fc692df9fd51826ee7e1cd98067eb",
   "totais": {
-    "total": 52,
-    "concursados_efetivos": 35,
+    "total": 53,
+    "concursados_efetivos": 36,
     "comissionados": 17,
     "funcao_gratificada": 10,
     "efetivo_cargo_comissao": 10,
@@ -439,11 +439,11 @@
     },
     {
       "numero": 43,
-      "nome": "STHEFANNY CRISTHINA DE SOUSA",
-      "cargo": "Assessora Técnica Nivel 5",
-      "categoria": "Comissionado",
-      "efetivo": false,
-      "comissionado": true,
+      "nome": "MELLANY DE JESUS S. MATOS MODESTO",
+      "cargo": "Enfermeiro Fiscal",
+      "categoria": "Efetivo",
+      "efetivo": true,
+      "comissionado": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -491,6 +491,16 @@
       "numero": 48,
       "nome": "ROGERIO MATHEUS BARBOSA",
       "cargo": "Assessor Técnico Nivel 4",
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "funcao_gratificada": false,
+      "efetivo_cargo_comissao": false
+    },
+    {
+      "numero": 49,
+      "nome": "STHEFANNY CRISTHINA DE SOUSA",
+      "cargo": "Assessora Técnica Nivel 5",
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
