@@ -6,6 +6,13 @@ import pdfplumber
 
 
 def normalizar(texto):
+    """
+    Padroniza o texto para facilitar comparações.
+
+    Exemplo:
+    'Função Gratificada' -> 'funcao gratificada'
+    """
+
     texto = " ".join(
         str(texto or "")
         .replace("\n", " ")
@@ -22,14 +29,32 @@ def normalizar(texto):
     )
 
 
+def limpar_texto(texto):
+    """
+    Remove quebras de linha e espaços desnecessários,
+    mas mantém acentos e letras originais.
+    """
+
+    return " ".join(
+        str(texto or "")
+        .replace("\n", " ")
+        .split()
+    )
+
+
 def identificar_colunas(cabecalho):
+    """
+    Identifica as colunas pelo nome do cabeçalho,
+    sem depender da posição fixa delas.
+    """
+
     colunas = {}
 
     for indice, celula in enumerate(cabecalho):
         texto = normalizar(celula)
 
         if indice == 0 and (
-            "n" in texto
+            texto in ("n", "nº", "numero")
             or "numero" in texto
         ):
             colunas["numero"] = indice
@@ -51,7 +76,9 @@ def identificar_colunas(cabecalho):
             and "cargo" in texto
             and "comissao" in texto
         ):
-            colunas["efetivo_cargo_comissao"] = indice
+            colunas[
+                "efetivo_cargo_comissao"
+            ] = indice
 
         elif texto in (
             "efetivos",
@@ -72,23 +99,129 @@ def identificar_colunas(cabecalho):
 
 
 def ler_celula(linha, indice):
-    if indice is None or indice >= len(linha):
+    """
+    Retorna o conteúdo de uma célula.
+    """
+
+    if indice is None:
         return ""
 
-    return " ".join(
-        str(linha[indice] or "")
-        .replace("\n", " ")
-        .split()
+    if indice >= len(linha):
+        return ""
+
+    return limpar_texto(
+        linha[indice]
+    )
+
+
+def contem_estagiario(*textos):
+    """
+    Identifica estagiário ou estagiária
+    pelo conteúdo publicado na tabela.
+    """
+
+    texto = normalizar(
+        " ".join(
+            str(valor or "")
+            for valor in textos
+        )
+    )
+
+    return "estagiari" in texto
+
+
+def validar_funcao_gratificada(texto):
+    """
+    Só considera função gratificada quando
+    o conteúdo realmente indicar essa condição.
+
+    Evita interpretar palavras soltas que
+    vazaram de outra linha do PDF.
+    """
+
+    texto = normalizar(texto)
+
+    if not texto:
+        return False
+
+    return (
+        "funcao" in texto
+        or "gratificada" in texto
+        or (
+            "efetivo" in texto
+            and "exercendo" in texto
+        )
+    )
+
+
+def validar_cargo_comissao(texto):
+    """
+    Só considera efetivo em cargo em comissão
+    quando há indicação real dessa condição.
+    """
+
+    texto = normalizar(texto)
+
+    if not texto:
+        return False
+
+    return (
+        "comissao" in texto
+        or (
+            "efetivo" in texto
+            and "exercendo" in texto
+        )
+    )
+
+
+def validar_efetivo(texto):
+    """
+    Verifica se a coluna de efetivos realmente
+    informa vínculo efetivo.
+    """
+
+    texto = normalizar(texto)
+
+    if not texto:
+        return False
+
+    return "efetivo" in texto
+
+
+def validar_comissionado(texto):
+    """
+    Verifica se a coluna de comissionados
+    realmente informa cargo comissionado.
+    """
+
+    texto = normalizar(texto)
+
+    if not texto:
+        return False
+
+    return (
+        "comissionado" in texto
+        or "comissionados" in texto
     )
 
 
 def classificar_linha(linha, colunas):
+    """
+    Interpreta uma linha da tabela.
+
+    A classificação respeita o que está
+    publicado na tabela mais recente.
+    """
+
     numero = ler_celula(
         linha,
         colunas.get("numero")
     )
 
-    if not re.fullmatch(r"\d+", numero):
+    if not re.fullmatch(
+        r"\d+",
+        numero
+    ):
         return None
 
     nome = ler_celula(
@@ -101,12 +234,14 @@ def classificar_linha(linha, colunas):
         colunas.get("cargo")
     )
 
-    funcao = ler_celula(
+    coluna_funcao = ler_celula(
         linha,
-        colunas.get("funcao_gratificada")
+        colunas.get(
+            "funcao_gratificada"
+        )
     )
 
-    cargo_comissao = ler_celula(
+    coluna_cargo_comissao = ler_celula(
         linha,
         colunas.get(
             "efetivo_cargo_comissao"
@@ -123,40 +258,103 @@ def classificar_linha(linha, colunas):
         colunas.get("comissionado")
     )
 
-    tem_funcao = bool(funcao.strip())
+    # ==============================
+    # ESTAGIÁRIO
+    # ==============================
 
-    tem_cargo_comissao = bool(
-        cargo_comissao.strip()
+    e_estagiario = contem_estagiario(
+        cargo,
+        coluna_efetivo,
+        coluna_comissionado,
+        coluna_funcao,
+        coluna_cargo_comissao
     )
 
-    e_efetivo = bool(
-        coluna_efetivo.strip()
-        or tem_funcao
-        or tem_cargo_comissao
+    # ==============================
+    # INDICADORES DA LINHA
+    # ==============================
+
+    tem_comissionado = (
+        validar_comissionado(
+            coluna_comissionado
+        )
     )
 
-    e_comissionado = bool(
-        coluna_comissionado.strip()
-    ) and not e_efetivo
+    tem_funcao = (
+        validar_funcao_gratificada(
+            coluna_funcao
+        )
+    )
 
-    if tem_funcao:
+    tem_cargo_comissao = (
+        validar_cargo_comissao(
+            coluna_cargo_comissao
+        )
+    )
+
+    tem_efetivo = (
+        validar_efetivo(
+            coluna_efetivo
+        )
+    )
+
+    # ==============================
+    # REGRA DE CLASSIFICAÇÃO
+    # ==============================
+
+    if e_estagiario:
+        categoria = "Estagiário"
+
+        e_efetivo = False
+        e_comissionado = False
+        tem_funcao = False
+        tem_cargo_comissao = False
+
+    elif tem_comissionado:
+        """
+        A coluna oficial de Comissionados
+        tem prioridade.
+
+        Isso resolve casos como Fernanda
+        Joyce, em que um texto da linha
+        anterior invade outra coluna.
+        """
+
+        categoria = "Comissionado"
+
+        e_efetivo = False
+        e_comissionado = True
+
+        tem_funcao = False
+        tem_cargo_comissao = False
+
+    elif tem_funcao:
         categoria = (
             "Efetivo com função gratificada"
         )
+
+        e_efetivo = True
+        e_comissionado = False
 
     elif tem_cargo_comissao:
         categoria = (
             "Efetivo com cargo em comissão"
         )
 
-    elif e_efetivo:
+        e_efetivo = True
+        e_comissionado = False
+
+    elif tem_efetivo:
         categoria = "Efetivo"
 
-    elif e_comissionado:
-        categoria = "Comissionado"
+        e_efetivo = True
+        e_comissionado = False
 
     else:
         categoria = "Não identificado"
+
+        e_efetivo = False
+        e_comissionado = False
 
     return {
         "numero": int(numero),
@@ -165,7 +363,10 @@ def classificar_linha(linha, colunas):
         "categoria": categoria,
         "efetivo": e_efetivo,
         "comissionado": e_comissionado,
-        "funcao_gratificada": tem_funcao,
+        "estagiario": e_estagiario,
+        "funcao_gratificada": (
+            tem_funcao
+        ),
         "efetivo_cargo_comissao": (
             tem_cargo_comissao
         )
@@ -173,7 +374,12 @@ def classificar_linha(linha, colunas):
 
 
 def extrair_empregados(pdf_bytes):
+    """
+    Extrai todos os empregados do PDF.
+    """
+
     empregados = []
+
     colunas = None
 
     with pdfplumber.open(
@@ -181,15 +387,25 @@ def extrair_empregados(pdf_bytes):
     ) as documento:
 
         for pagina in documento.pages:
-            tabelas = pagina.extract_tables()
+
+            tabelas = (
+                pagina.extract_tables()
+                or []
+            )
 
             for tabela in tabelas:
+
                 for linha in tabela:
+
                     if not linha:
                         continue
 
-                    cabecalho = identificar_colunas(
-                        linha
+                    # Verifica se esta linha
+                    # é um cabeçalho
+                    cabecalho = (
+                        identificar_colunas(
+                            linha
+                        )
                     )
 
                     if (
@@ -202,9 +418,11 @@ def extrair_empregados(pdf_bytes):
                     if not colunas:
                         continue
 
-                    empregado = classificar_linha(
-                        linha,
-                        colunas
+                    empregado = (
+                        classificar_linha(
+                            linha,
+                            colunas
+                        )
                     )
 
                     if empregado:
@@ -212,22 +430,46 @@ def extrair_empregados(pdf_bytes):
                             empregado
                         )
 
+    # ==============================
+    # REMOVER DUPLICIDADES
+    # ==============================
+
     empregados_unicos = {}
 
     for empregado in empregados:
-        chave = normalizar(
+
+        nome_normalizado = normalizar(
             empregado["nome"]
         )
 
+        if not nome_normalizado:
+            continue
+
+        """
+        O nome é utilizado para evitar
+        duplicidade.
+
+        O número da primeira coluna NÃO
+        é usado como identificador único,
+        porque o documento pode possuir
+        numeração repetida.
+        """
+
         if (
-            chave
-            and chave not in empregados_unicos
+            nome_normalizado
+            not in empregados_unicos
         ):
-            empregados_unicos[chave] = empregado
+            empregados_unicos[
+                nome_normalizado
+            ] = empregado
 
     resultado = list(
         empregados_unicos.values()
     )
+
+    # ==============================
+    # RENUMERAÇÃO INTERNA
+    # ==============================
 
     for numero, empregado in enumerate(
         resultado,
@@ -235,11 +477,28 @@ def extrair_empregados(pdf_bytes):
     ):
         empregado["numero"] = numero
 
+    # ==============================
+    # VALIDAÇÕES
+    # ==============================
+
     if len(resultado) < 5:
         raise RuntimeError(
-            "A estrutura da tabela mudou e "
-            "os dados não puderam ser lidos "
-            "com segurança."
+            "A estrutura da tabela mudou "
+            "e os dados não puderam ser "
+            "lidos com segurança."
+        )
+
+    nomes_vazios = [
+        empregado
+        for empregado in resultado
+        if not empregado["nome"].strip()
+    ]
+
+    if nomes_vazios:
+        raise RuntimeError(
+            "Foram encontrados registros "
+            "sem nome. A atualização foi "
+            "interrompida."
         )
 
     return resultado
