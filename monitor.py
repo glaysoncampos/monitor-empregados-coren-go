@@ -29,6 +29,11 @@ def calcular_totais(empregados):
             for empregado in empregados
         ),
 
+        "estagiarios": sum(
+            empregado.get("estagiario", False)
+            for empregado in empregados
+        ),
+
         "funcao_gratificada": sum(
             empregado["funcao_gratificada"]
             for empregado in empregados
@@ -49,6 +54,7 @@ def calcular_totais(empregados):
     soma_principal = (
         totais["concursados_efetivos"]
         + totais["comissionados"]
+        + totais["estagiarios"]
         + totais["nao_identificados"]
     )
 
@@ -119,6 +125,7 @@ def salvar_csv(pasta, empregados):
             "categoria",
             "efetivo",
             "comissionado",
+            "estagiario",
             "funcao_gratificada",
             "efetivo_cargo_comissao"
         ]
@@ -193,6 +200,7 @@ def executar_monitor():
     )
 
     print("Monitor concluído.")
+
     print(
         json.dumps(
             totais,
