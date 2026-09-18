@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-18T09:27:02.807835-03:00",
+  "atualizado_em": "2026-09-18T10:26:55.354150-03:00",
   "ano": 2026,
   "fonte": {
     "titulo_lista": "Relação de Empregados com Cargos _2026",
@@ -10,10 +10,11 @@
   "pdf_sha256": "24ff0789f2b3a3b1fe7eca809c38e601ab5be7a152c81de74ac91d66803a577a",
   "totais": {
     "total": 52,
-    "concursados_efetivos": 37,
-    "comissionados": 15,
-    "funcao_gratificada": 10,
-    "efetivo_cargo_comissao": 10,
+    "concursados_efetivos": 35,
+    "comissionados": 16,
+    "estagiarios": 1,
+    "funcao_gratificada": 9,
+    "efetivo_cargo_comissao": 9,
     "nao_identificados": 0
   },
   "empregados": [
@@ -24,6 +25,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -34,6 +36,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -44,6 +47,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -54,6 +58,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -64,6 +69,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -74,6 +80,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -84,6 +91,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -94,6 +102,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -104,6 +113,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -114,6 +124,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -124,6 +135,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -134,6 +146,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -144,6 +157,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -154,6 +168,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -164,6 +179,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -174,6 +190,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -184,6 +201,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -194,6 +212,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -204,6 +223,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -214,6 +234,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -224,6 +245,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -231,11 +253,12 @@
       "numero": 22,
       "nome": "FERNANDA JOYCE ALVES LEITE",
       "cargo": "Assessora Técnica Nivel 1",
-      "categoria": "Efetivo com cargo em comissão",
-      "efetivo": true,
-      "comissionado": false,
+      "categoria": "Comissionado",
+      "efetivo": false,
+      "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
-      "efetivo_cargo_comissao": true
+      "efetivo_cargo_comissao": false
     },
     {
       "numero": 23,
@@ -244,6 +267,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -251,10 +275,11 @@
       "numero": 24,
       "nome": "FRANKLIN SILVA BRANDAO",
       "cargo": "Advogado / Aposentado",
-      "categoria": "Efetivo com função gratificada",
+      "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
-      "funcao_gratificada": true,
+      "estagiario": false,
+      "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
     {
@@ -264,6 +289,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -271,9 +297,10 @@
       "numero": 26,
       "nome": "GIULIA SERIKAKU ROSSI",
       "cargo": "Estagiária",
-      "categoria": "Efetivo",
-      "efetivo": true,
+      "categoria": "Estagiário",
+      "efetivo": false,
       "comissionado": false,
+      "estagiario": true,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -284,6 +311,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -294,6 +322,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -304,6 +333,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -314,6 +344,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -324,6 +355,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -334,6 +366,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -344,6 +377,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -354,6 +388,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -364,6 +399,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -374,6 +410,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -384,6 +421,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -394,6 +432,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -404,6 +443,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -414,6 +454,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -424,6 +465,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -434,6 +476,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -444,6 +487,7 @@
       "categoria": "Efetivo com cargo em comissão",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": true
     },
@@ -454,6 +498,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -464,6 +509,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -474,6 +520,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -484,6 +531,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -494,6 +542,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -504,6 +553,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -514,6 +564,7 @@
       "categoria": "Efetivo com função gratificada",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": true,
       "efetivo_cargo_comissao": false
     },
@@ -524,6 +575,7 @@
       "categoria": "Comissionado",
       "efetivo": false,
       "comissionado": true,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     },
@@ -534,6 +586,7 @@
       "categoria": "Efetivo",
       "efetivo": true,
       "comissionado": false,
+      "estagiario": false,
       "funcao_gratificada": false,
       "efetivo_cargo_comissao": false
     }
